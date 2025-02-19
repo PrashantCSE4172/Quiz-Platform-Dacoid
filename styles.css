@@ -1,0 +1,160 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(45deg, #ff6b81, #ffd93d); /* Vibrant gradient background */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Container for the Quiz */
+.quiz-container {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 1000px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out;
+  transition: all 0.3s ease;
+  overflow-y: auto; /* Add scroll if the content overflows */
+  height: 90vh; /* Limit the height for scrolling */
+  position: relative;
+}
+
+/* Title of the Quiz */
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+/* Timer Styling */
+#timer {
+  font-size: 1.4rem;
+  text-align: right;
+  color: #ff5722;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Question Styling */
+#question {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Answer Options Styling */
+.option {
+  background-color: #ff8a65; /* Orange-ish color */
+  border: none;
+  padding: 15px;
+  margin: 10px 0;
+  width: 100%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Disabled option styling (after answer is selected) */
+.option:disabled {
+  background-color: #b0bec5;
+  cursor: not-allowed;
+}
+
+/* Correct answer styling */
+.option.correct {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+/* Incorrect answer styling */
+.option.incorrect {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+/* Next and Retry Button Styling */
+button {
+  background-color: #2196f3; /* Blue */
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Scoreboard Styling */
+#scoreboard {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  background: #00c853; /* Green */
+  border-radius: 10px;
+  color: white;
+}
+
+/* Retry Button inside Scoreboard */
+#scoreboard button {
+  background-color: #ff5722; /* Vibrant Orange */
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+#scoreboard button:hover {
+  background-color: #e64a19; /* Darker orange */
+}
+
+/* Styling the history container */
+#history-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#history-list {
+  margin-top: 10px;
+}
+
+.history-item {
+  background: #f9f9f9;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.history-item p {
+  margin: 5px 0;
+}
+
+
+/* Add smooth scrolling for the whole page */
+html, body {
+  scroll-behavior: smooth;
+}
