@@ -46,15 +46,7 @@ HTML: Markup for the quiz structure.
 CSS: Styling for the app layout and appearance.
 JavaScript: Logic for handling the quiz functionality, timer, answers, and saving quiz history to IndexedDB.
 IndexedDB: For storing the user's quiz attempt history locally in the browser.
-File Structure
-bash
-Copy
-/interactive-quiz-platform
-│
-├── index.html          # Main HTML file with quiz structure
-├── quiz.js             # JavaScript file handling quiz functionality
-├── indexedDB.js        # JavaScript file for IndexedDB handling
-└── styles.css          # CSS file for styling the quiz interface
+
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
